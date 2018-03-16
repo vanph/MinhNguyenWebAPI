@@ -1,0 +1,18 @@
+﻿@model List<HelloWorldWebApp.Models.Product>
+
+@{
+    ViewBag.Title = "About";
+}
+
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@foreach (var product in Model)
+{
+    <div>
+        <span> @product.ProductId </span>
+        <span> @product.Name </span>
+    </div>
+
+}
